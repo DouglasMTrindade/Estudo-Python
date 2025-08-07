@@ -1,8 +1,9 @@
 import random 
 
+# Sorteia 5 numeros entre 0 e 10
+numeros_sorteados= tuple(random.randint(0,10) for _ in range(5))
 
-sorteio = [random.randint(0,10) for _ in range(6)]
-tupla_sorteio = tuple(sorteio)
-print(f"numeros sorteados: {tupla_sorteio}")
-print (f"Menor Valor :{min(tupla_sorteio)}")
-print (f"Maior Valor :{max(tupla_sorteio)}")
+#Exibe Resultados
+print (f"numeros sorteados: {numeros_sorteados}")
+print (f"Menor Valor :{min(numeros_sorteados)}")
+print (f"Maior Valor :{max(numeros_sorteados)}")
