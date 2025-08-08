@@ -9,6 +9,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
   - `ex-075.py` – Desenvolva um programa que leia **quatro valores** pelo teclado e guarde-os em uma **tupla**. No final, mostre: a) quantas vezes apareceu o valor **9**; b) em que **posição** foi digitado o primeiro valor **3**; c) quais foram os números **pares**.
 
+  - `ex-075.py` - Crie um programa que tenha uma **tupla** única com **nomes de produtos** e seus respectivos **preços**, na sequência. No final, mostre uma listagem de preços, organizando os dados em forma **tabular**.
+
   -  `...`
 
 ## Boas práticas adotadas
