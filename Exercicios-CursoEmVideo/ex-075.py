@@ -1,25 +1,25 @@
-import random
-
 #Recebe valores inteiros digitados e salva em uma tupla
-numeros= tuple(int(input(f"digite o {i+1}º numero: ")) for i in range(5))
+numeros= tuple(int(input(f"digite o {i+1}º numero: ")) for i in range(4))
 
-#zera contadores
-cont9 = 0
-cont3 = 0
-contpar =0
 
 #Verifica os valores salvos na tupla
-for valor in numeros:
-    if valor == 9:
-        cont9 += 1
-    elif valor == 3 and cont3 != 1:
-        cont3 += 1
-    elif valor%2 == 0:
-        contpar += 1
-    
+conta9 = numeros.count(9)
+numeros_par = [valor for valor in numeros if valor%2 ==0]
+
+#Verifica a posição do número 3
+try:
+    indice_3 = numeros.index(3)
+    mensagem_3 = f"O número 3 aparece na posiçao {indice_3} da tupla"
+except ValueError:
+    mensagem_3 = "Não contem o numero 3"
+
 
 #Exibe os resultados
-print (f"Numeros digitados: {numeros}")
-print (f"Quantida de digitos 9: {cont9}")
-print (f"Posiçao do primeiro digito 3: {cont3}")
-print (f"Quantidade numeros pares: {contpar}")
+print (f"Números digitados: {numeros}")
+print (f"Quantidade de vezes que o numero 9 apareceu: {conta9}")
+print (mensagem_3)
+
+if numeros_par:
+    print (f"Números pares: {numeros_par}")
+else:
+    print ("Não contem numeros pares")

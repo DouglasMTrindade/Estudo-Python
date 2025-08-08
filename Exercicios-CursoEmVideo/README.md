@@ -7,7 +7,9 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 - **Exercicios-CursoEmVideo/**
   - `ex-074.py` – Crie um programa que vai gerar **cinco números aleatórios** e colocar em uma **tupla**. Depois disso, mostre a **listagem de números** gerados e também indique o **menor** e o **maior** valor que estão na tupla.
 
-  - `...`
+  - `ex-075.py` – Desenvolva um programa que leia **quatro valores** pelo teclado e guarde-os em uma **tupla**. No final, mostre: a) quantas vezes apareceu o valor **9**; b) em que **posição** foi digitado o primeiro valor **3**; c) quais foram os números **pares**.
+
+  -  `...`
 
 ## Boas práticas adotadas
 
