@@ -15,6 +15,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
  - `ex-078.py` -  Faça um programa que leia **5 valores numéricos** e guarde-os em uma **lista**. No final, mostre qual foi o **maior** e o **menor** valor digitado e as suas respectivas **posições** na lista.
 
+- `ex-079.py` -  Crie um programa onde o usuário possa digitar **vários valores numéricos** e cadastre-os em uma **lista**. Caso o número já exista na lista, ele **não será adicionado**. No final, serão exibidos todos os **valores únicos** digitados, em **ordem crescente**.
+
   -  `...`
 
 ## Boas práticas adotadas
