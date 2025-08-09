@@ -13,6 +13,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
   - `ex-077.py` - Crie um programa que tenha uma **tupla** com **várias palavras** (sem acentos). Depois, você deve mostrar, para cada palavra, quais são as suas **vogai
 
+ - `ex-078.py` -  Faça um programa que leia **5 valores numéricos** e guarde-os em uma **lista**. No final, mostre qual foi o **maior** e o **menor** valor digitado e as suas respectivas **posições** na lista.
+
   -  `...`
 
 ## Boas práticas adotadas
