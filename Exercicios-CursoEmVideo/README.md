@@ -19,7 +19,7 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-080.py` - Crie um programa onde o usuário possa digitar **cinco valores numéricos** e cadastre-os em uma **lista**, já na **posição correta** de inserção (sem usar o método sort()). No final, mostre a **lista ordenada** na tela. 
 
-- `ex-080.py` - Crie um programa que vai ler **vários números** e colocar em uma **lista**. Depois disso, mostre: a) **quantos números** foram digitados; b) a lista de valores, ordenada de forma **decrescente**; c) se o valor **5** foi digitado e está ou não na lista.
+- `ex-081.py` - Crie um programa que vai ler **vários números** e colocar em uma **lista**. Depois disso, mostre: a) **quantos números** foram digitados; b) a lista de valores, ordenada de forma **decrescente**; c) se o valor **5** foi digitado e está ou não na lista.
 
   -  `...`
 
