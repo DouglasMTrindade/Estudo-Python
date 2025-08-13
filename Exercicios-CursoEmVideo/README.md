@@ -21,6 +21,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-081.py` - Crie um programa que vai ler **vários números** e colocar em uma **lista**. Depois disso, mostre: a) **quantos números** foram digitados; b) a lista de valores, ordenada de forma **decrescente**; c) se o valor **5** foi digitado e está ou não na lista.
 
+- `ex-082.py` - Crie um programa que vai ler **vários números** e colocar em uma **lista**. Depois disso, crie **duas listas extras** que vão conter apenas os valores **pares** e os valores **ímpares** digitados, respectivamente. Ao final, mostre o conteúdo das **três listas** geradas.
+
   -  `...`
 
 ## Boas práticas adotadas
