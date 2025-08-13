@@ -23,6 +23,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-082.py` - Crie um programa que vai ler **vários números** e colocar em uma **lista**. Depois disso, crie **duas listas extras** que vão conter apenas os valores **pares** e os valores **ímpares** digitados, respectivamente. Ao final, mostre o conteúdo das **três listas** geradas.
 
+- `ex-083.py` - Crie um programa onde o usuário digite uma **expressão** qualquer que use **parênteses**. Seu programa deverá analisar se a expressão passada está com os **parênteses abertos e fechados** na ordem correta.
+
   -  `...`
 
 ## Boas práticas adotadas
