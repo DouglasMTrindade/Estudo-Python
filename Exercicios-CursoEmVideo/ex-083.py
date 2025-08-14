@@ -1,4 +1,5 @@
 def analisa_parentese (expressao):
+    #Verifica os parenteses de uma expressão estao corretos
     pilha = []
     for simb in expressao:
         if simb == '(':
@@ -8,13 +9,12 @@ def analisa_parentese (expressao):
                 pilha.pop()
             else :
                 pilha.append(')')
-                return False
+                return False # ')' sem '(' correspondente
     
-    return len(pilha) == 0
+    return len(pilha) == 0 #pilha vazia a expressao esta balanceada
 
-
+#programa principal
 entrada = input("Digite a expressão:")
-
 
 if analisa_parentese(entrada):
     print("Sua expressão esta correta")
