@@ -25,7 +25,9 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-083.py` - Crie um programa onde o usuário digite uma **expressão** qualquer que use **parênteses**. Seu programa deverá analisar se a expressão passada está com os **parênteses abertos e fechados** na ordem correta.
 
-  -  `...`
+- `ex-084.py` - Faça um programa que leia **nome** e **peso** de **várias pessoas**, guardando tudo em uma **lista**. No final, mostre: a) **quantas pessoas** foram cadastradas; b) uma listagem com as pessoas mais **pesadas**; c) uma listagem com as pessoas mais **leves**.
+
+-  `...`
 
 ## Boas práticas adotadas
 
