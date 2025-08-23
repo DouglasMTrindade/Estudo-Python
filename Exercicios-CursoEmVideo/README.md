@@ -27,6 +27,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-084.py` - Faça um programa que leia **nome** e **peso** de **várias pessoas**, guardando tudo em uma **lista**. No final, mostre: a) **quantas pessoas** foram cadastradas; b) uma listagem com as pessoas mais **pesadas**; c) uma listagem com as pessoas mais **leves**.
 
+- `ex-085.py` - Crie um programa onde o usuário possa digitar **sete valores numéricos** e cadastre-os em uma **lista única** que mantenha separados os valores **pares** e **ímpares**. No final, mostre os valores **pares** e **ímpares** em **ordem crescente**.
+
 -  `...`
 
 ## Boas práticas adotadas
