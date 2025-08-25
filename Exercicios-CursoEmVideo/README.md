@@ -31,6 +31,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-086.py` - Crie um programa que crie uma **matriz** de dimensão **3x3** e preencha com valores lidos pelo teclado. No final, mostre a matriz na tela, com a formatação correta.
 
+- `ex-087.py` - Aprimore o exercício anterior, mostrando no final:  a **soma** de todos os valores **pares** digitados; b) a **soma** dos valores da **terceira coluna**; c) o **maior valor** da **segunda linha**.
+
 -  `...`
 
 ## Boas práticas adotadas
