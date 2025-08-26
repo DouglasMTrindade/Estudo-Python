@@ -33,6 +33,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-087.py` - Aprimore o exercício anterior, mostrando no final:  a **soma** de todos os valores **pares** digitados; b) a **soma** dos valores da **terceira coluna**; c) o **maior valor** da **segunda linha**.
 
+- `ex-088.py` - Faça um programa que ajude um jogador da **Mega Sena** a criar **palpites**. O programa vai perguntar **quantos jogos** serão gerados e vai sortear **6 números** entre 1 e 60 para cada jogo, cadastrando tudo em uma **lista composta**.
+
 -  `...`
 
 ## Boas práticas adotadas
