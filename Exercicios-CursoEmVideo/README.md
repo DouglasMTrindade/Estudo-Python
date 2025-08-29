@@ -35,6 +35,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-088.py` - Faça um programa que ajude um jogador da **Mega Sena** a criar **palpites**. O programa vai perguntar **quantos jogos** serão gerados e vai sortear **6 números** entre 1 e 60 para cada jogo, cadastrando tudo em uma **lista composta**.
 
+- `ex-089.py` - Crie um programa que leia **nome** e **duas notas** de vários alunos e guarde tudo em uma **lista composta**. No final, mostre um **boletim** contendo a **média** de cada um e permita que o usuário possa mostrar as **notas** de cada aluno individualmente.
+
 -  `...`
 
 ## Boas práticas adotadas
