@@ -41,6 +41,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-091.py` - Crie um programa onde **4 jogadores** joguem um **dado** e tenham resultados aleatórios. Guarde esses resultados em um **dicionário**. No final, coloque esse dicionário em **ordem**, sabendo que o **vencedor** tirou o **maior número** no dado.
 
+- `ex-092.py` - Crie um programa que leia **nome**, **ano de nascimento** e **carteira de trabalho** de uma pessoa e cadastre-os (com **idade**) em um **dicionário**. Se por acaso a CTPS for diferente de zero, o dicionário receberá também o **ano de contratação** e o **salário**. Calcule e acrescente, além da idade, com quantos anos a pessoa vai se **aposentar** (considerando 35 anos de contribuição).
+
 -  `...`
 
 ## Boas práticas adotadas
