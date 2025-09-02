@@ -39,6 +39,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-090.py` -  Faça um programa que leia **nome** e **média** de um aluno, guardando também a **situação** (aprovado ou reprovado) em um **dicionário**. No final, mostre o conteúdo da estrutura na tela.
 
+- `ex-091.py` - Crie um programa onde **4 jogadores** joguem um **dado** e tenham resultados aleatórios. Guarde esses resultados em um **dicionário**. No final, coloque esse dicionário em **ordem**, sabendo que o **vencedor** tirou o **maior número** no dado.
+
 -  `...`
 
 ## Boas práticas adotadas
