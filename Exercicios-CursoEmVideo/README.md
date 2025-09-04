@@ -47,6 +47,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-094.py` - Crie um programa que leia **nome**, **sexo** e **idade** de várias pessoas, guardando os dados de cada pessoa em um **dicionário** e todos os dicionários em uma **lista**. No final, mostre: a) **quantas pessoas** foram cadastradas; b) a **média de idade** do grupo; c) uma lista com todas as **mulheres**; d) uma lista com todas as pessoas com **idade acima da média**.
 
+- `ex-095.py` - Aprimore o exercício 93 para que ele funcione com **vários jogadores**, incluindo um sistema de visualização de **detalhes do aproveitamento** de cada jogador.
+
 -  `...`
 
 ## Boas práticas adotadas
