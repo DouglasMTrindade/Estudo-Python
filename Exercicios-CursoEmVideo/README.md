@@ -49,6 +49,8 @@ Repositório contendo minhas soluções dos exercícios do Curso em Vídeo (Pyth
 
 - `ex-095.py` - Aprimore o exercício 93 para que ele funcione com **vários jogadores**, incluindo um sistema de visualização de **detalhes do aproveitamento** de cada jogador.
 
+- `ex-096.py` - Faça um programa que tenha uma **função** chamada area(), que receba as dimensões de um terreno **retangular** (largura e comprimento) e mostre a **área do terreno**.
+
 -  `...`
 
 ## Boas práticas adotadas
