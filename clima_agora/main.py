@@ -1,7 +1,8 @@
 import os
+import localizacao
 from dotenv import load_dotenv
 import requests
 
-load_dotenv()
+dados_local = localizacao.busca_localizacao()
 
-api_key = os.getenv('IPINFO_API_KEY')
+print(dados_local['city'])
