@@ -54,9 +54,9 @@ def busca_clima (local):
             return None
 
         clima_atual ={
-            'temperatura': dados_clima.get('temp'),
-            'sensacao_termica': dados_clima.get('feels_like'),
-            'vento': dados_clima.get('wind_speed'),
+            'temperatura': f"{dados_clima.get('temp')}°C",
+            'sensacao_termica': f"{dados_clima.get('feels_like')}°C",
+            'vento': f"{dados_clima.get('wind_speed')} m/s",
             'descricao': None
         }
 
