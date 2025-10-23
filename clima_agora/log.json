@@ -1,0 +1,24 @@
+[
+  {
+    "Consulta": "2025-10-23 12:06:37",
+    "Cidade": "Porto Alegre",
+    "loc": "-30.0328,-51.2302",
+    "Clima": {
+      "temperatura": "27.19°C",
+      "sensacao": "26.85°C",
+      "vento": "4.63 m/s",
+      "descricao": "clear sky"
+    }
+  },
+  {
+    "Consulta": "2025-10-23 12:06:44",
+    "Cidade": "Porto Alegre",
+    "loc": "-30.0328,-51.2302",
+    "Clima": {
+      "temperatura": "27.19°C",
+      "sensacao": "26.85°C",
+      "vento": "4.63 m/s",
+      "descricao": "clear sky"
+    }
+  }
+]
