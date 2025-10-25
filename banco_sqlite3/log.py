@@ -1,10 +1,9 @@
-from datetime import datetime
 import os
 import json
 
-def salva_log (local, clima):
+
+def salva_log (local, clima,agora):
     dados = []
-    agora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     linha = f'[{agora}] {local} {clima} \n'
 

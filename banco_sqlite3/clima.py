@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 from dotenv import load_dotenv
 import requests
@@ -5,7 +6,7 @@ import requests
 load_dotenv()
 API_KEY = os.getenv('OPENWEATHERMAP_API_KEY')
 
-def busca_clima(local):
+def clima_agora(local):
     """
     Consulta a API OpenWeather (One Call) para obter dados do clima atual
     a partir da string local "lat,lon" 
@@ -27,8 +28,8 @@ def busca_clima(local):
     if not API_KEY:
         print("Erro, Chave não encontrada no .env")
         return None
-    
-    lat_str, lon_str = local.strip().split(',')
+
+    lat_str, lon_str = local['local'].strip().split(',')
     try:
         lat = float(lat_str)
         lon = float(lon_str)
@@ -39,8 +40,10 @@ def busca_clima(local):
     exclude = 'minutely,hourly,daily,alerts'
     units= 'metric'
     url= f'https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={exclude}&units={units}&appid={API_KEY}'
+    agora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    print (f'Conultando clima em lat= {lat}, lon={lon}')
+
+    print (f'Conultando clima em {local['cidade']} lat= {lat}, lon={lon}')
     try:
         resposta = requests.get(url, timeout=8)
         resposta.raise_for_status()
@@ -63,7 +66,7 @@ def busca_clima(local):
             'descricao': descricao
         }
         
-        return clima_atual
+        return clima_atual, agora
     except requests.exceptions.HTTPError as http_err:
         print(f"Erro HTTP ao consultar OpenWeather: {http_err} (status: {getattr(http_err.response, 'status_code', 'N/A')})")
     except requests.exceptions.Timeout:

@@ -23,10 +23,10 @@ def busca_localizacao ():
         resposta = requests.get(url)
         resposta.raise_for_status()
         dados = resposta.json()
-
+        
         dados_local = {
             'cidade': dados['city'],
-            'local': dados('loc')
+            'local': dados['loc']
         }
         return dados_local
     except requests.exceptions.RequestException as e:
