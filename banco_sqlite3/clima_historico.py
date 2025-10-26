@@ -58,10 +58,11 @@ def lista_consultas():
         conn.close()
 
 
-def filtrar_por_cidade(cidade):
+def filtrar_por_cidade():
     conn = sqlite3.connect('consultas.db')
     cursor = conn.cursor()
     
+    cidade = input("Digite a cidade que quer filtrar : ")
     try:
         cursor.execute("SELECT * FROM consultas WHERE cidade = ?" , (cidade,))
         rows = cursor.fetchall()
@@ -105,7 +106,3 @@ def apagar_por_id ():
     finally:
         conn.close()
 
-
-'''
-def menu():
-'''
