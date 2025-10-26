@@ -16,4 +16,6 @@ if __name__ == '__main__':
         clima_historico.cria_tabela()
         clima_historico.salva_consulta(local, clima,agora)
         clima_historico.lista_consultas()
-        clima_historico.filtrar_por_cidade('Canoas')
+        clima_historico.filtrar_por_cidade('Porto Alegre')
+        clima_historico.apagar_por_id()
+

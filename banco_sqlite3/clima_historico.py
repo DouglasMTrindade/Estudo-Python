@@ -1,5 +1,5 @@
 import sqlite3
-
+from valida_entrada import le_int
 
 
 def cria_tabela():
@@ -17,7 +17,7 @@ def cria_tabela():
 
 
 def salva_consulta (local,clima,agora):
-    conn=sqlite3.connect('consultas.db')
+    conn = sqlite3.connect('consultas.db')
     cursor = conn.cursor()
 
     sql = "INSERT INTO consultas(cidade, temperatura, descricao, data_hora) VALUES (?,?,?,?)"
@@ -47,13 +47,15 @@ def lista_consultas():
     try:
         cursor.execute("SELECT * FROM consultas")
         rows = cursor.fetchall()
+        if rows:
+            for row in rows:
+             print(row)
+        else:
+            print("Nenhum historico encontrado")
     except sqlite3.Error as e:
         print(f"Erro no banco: {e}")
-
-    for row in rows:
-        print(row)
-
-    conn.close()
+    finally:
+        conn.close()
 
 
 def filtrar_por_cidade(cidade):
@@ -61,20 +63,47 @@ def filtrar_por_cidade(cidade):
     cursor = conn.cursor()
     
     try:
-        cursor.execute("SELECT * FROM consultas")
+        cursor.execute("SELECT * FROM consultas WHERE cidade = ?" , (cidade,))
         rows = cursor.fetchall()
+        if rows:
+            for row in rows:
+                print(row)
+        else:
+            print(f"ciade '{cidade}' nao encontrada no registro")
     except sqlite3.Error as e:
         print(f"Erro no banco {e}")
-
-    for row in rows:
-        if row[1] == cidade:
-            print(row)
-    
-    conn.close()
+    finally:
+        conn.close()
 
 
-def apagar_por_id (id):
+def apagar_por_id ():
+    conn = sqlite3.connect("consultas.db")
+    cursor = conn.cursor()
 
+    print("Historico de consultas:")
+    lista_consultas()
+    id = le_int("informe o ID a ser excluido: ")
+
+    try:
+        sql = "DELETE FROM consultas WHERE id = ?" 
+        sql_cont = "SELECT COUNT(*) FROM consultas WHERE id = ?"
+
+        cursor.execute(sql_cont,(id,))
+        count = cursor.fetchone()[0]
+        print(count)
+        if count == 0:
+            print(f"ERRO: ID {id} não encontrado")
+            return
+
+        cursor.execute(sql, (id,))
+        conn.commit()
+        print(f"ID {id} apagado com sucesso!")
+        print("Historico atualizado:")
+        lista_consultas()
+    except sqlite3.Error as e:
+        print("Erro no banco: ", e)
+    finally:
+        conn.close()
 
 
 '''
