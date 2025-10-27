@@ -104,11 +104,9 @@ def filtrar_por_cidade():
                 for row in rows:
                     print(f"ID {row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]}")
             else:
-                print(f"ciade '{cidade}' nao encontrada no registro")
+                print(f"cidade '{cidade}' nao encontrada no registro")
     except sqlite3.Error as e:
         print(f"Erro no banco {e}")
-    finally:
-        conn.close()
 
 
 def apagar_por_id ():
@@ -121,7 +119,6 @@ def apagar_por_id ():
     lista_consultas()
     id = le_int("informe o ID a ser excluido: ")
     sql = "DELETE FROM consultas WHERE id = ?" 
-    sql_cont = "SELECT COUNT(*) FROM consultas WHERE id = ?"
 
     try: 
         with sqlite3.connect("consultas.db") as conn:

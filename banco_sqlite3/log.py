@@ -21,7 +21,7 @@ def salva_log (local, clima,agora):
     linha = f'[{agora}] {local} {clima} \n'
 
     try:
-        with open ('log.tex','a',encoding='utf-8') as f:
+        with open ('log.txt','a',encoding='utf-8') as f:
             f.write(linha)
     except FileNotFoundError:
         print("Arquivo não existe")
@@ -53,4 +53,4 @@ def salva_log (local, clima,agora):
     registro.append(dados)
 
     with open ('log.json','w',encoding='utf-8') as reg:
-        json.dump(registro,reg,ensure_ascii=False, ident=2)
+        json.dump(registro,reg,ensure_ascii=False, indent=2)

@@ -13,7 +13,7 @@ def le_int(mensagem):
     valido = True
     while valido:
         try:
-            valor = int(input(mensagem))
+            valor = int(input(mensagem).strip())
             valido = False
         except ValueError:
             print("Valor digitado invalido, Digite novamente")
