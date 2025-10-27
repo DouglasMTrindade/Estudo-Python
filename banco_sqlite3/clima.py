@@ -17,9 +17,9 @@ def clima_agora(local):
     Returns:
         dict | None: dicionário com os campos filtrados:
             {
-                "temperatura": float,
-                "sensacao_termica": float,
-                "vento": float,
+                "temperatura": str,
+                "sensacao_termica": str,
+                "vento": str,
                 "descricao": str
             }
         ou None em caso de erro.

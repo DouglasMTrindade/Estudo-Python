@@ -1,6 +1,15 @@
 
 
 def le_int(mensagem):
+    """
+    Lê um número inteiro do usuário com tratamento de erro.
+
+    Args:
+        msg (str): Mensagem exibida ao usuário.
+
+    Returns:
+        int: Valor inteiro digitado.
+    """
     valido = True
     while valido:
         try:
@@ -12,17 +21,16 @@ def le_int(mensagem):
     return valor
 
 
-def menu ():
-   
-    lista_menu = {
-        0 : "MENU",
-        1 : "Consultar e salvar clima",
-        2 : "Lista histórico completo",
-        3 : "Filtrar por cidade",
-        4 : "Apagar registro",
-        5 : "Sair"
-    }
+def menu (lista_menu):
+    """
+    Exibe um menu dinâmico baseado em uma lista de opções.
 
+    Args:
+        opcoes (list): lista de opções (strings)
+
+    Returns:
+        int: opção escolhida pelo usuário
+    """
     print("MENU")
     for chave,valor in lista_menu.items():
         print(f"[{chave}] - {valor}")

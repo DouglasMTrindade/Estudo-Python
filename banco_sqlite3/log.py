@@ -3,6 +3,19 @@ import json
 
 
 def salva_log (local, clima,agora):
+    """
+    Registra uma mensagem de log em um arquivo local.
+
+    Essa função é utilizada para registrar erros, exceções ou eventos importantes
+    do sistema no arquivo 'log.txt'. Cada mensagem é armazenada com a data e hora
+    em que ocorreu, facilitando a análise posterior de falhas.
+
+    Args:
+        mensagem (str): Texto descritivo do evento ou erro a ser registrado.
+
+    Returns:
+        None
+    """
     dados = []
 
     linha = f'[{agora}] {local} {clima} \n'

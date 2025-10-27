@@ -6,13 +6,20 @@ import clima_historico
 
 if __name__ == '__main__':
     clima_historico.cria_tabela()
+    lista_menu = {
+        0 : "MENU",
+        1 : "Consultar e salvar clima",
+        2 : "Lista histórico completo",
+        3 : "Filtrar por cidade",
+        4 : "Apagar registro",
+        5 : "Sair"
+    }
+    
 
     while True:
-        opcao = menu()
+        opcao = menu(lista_menu)
 
-        if opcao == 0:
-            opcao = menu()
-        elif opcao == 1:
+        if opcao == 1:
             local = busca_localizacao()
             if local:
                 clima, agora = clima_agora(local)
@@ -31,15 +38,7 @@ if __name__ == '__main__':
         elif opcao == 5:
             break
         else:
-            print(f"Opcao {opcao}, Inválida")
-            opcao = 0
-
-
-'''
-    if local and clima:
-        clima_historico.cria_tabela()
-        clima_historico.salva_consulta(local, clima,agora)
-        clima_historico.lista_consultas()
-        clima_historico.filtrar_por_cidade('Porto Alegre')
-        clima_historico.apagar_por_id()
-'''
+            if opcao != 0:
+                print(f"Opcao {opcao}, Inválida")
+                
+    print("Programa Finalizado")
