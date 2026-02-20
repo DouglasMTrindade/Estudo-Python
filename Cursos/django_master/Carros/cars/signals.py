@@ -3,7 +3,7 @@ from django.db.models.signals import pre_save, pre_delete,post_save,post_delete
 from django.dispatch import receiver
 from cars.models import Car, CarInventory
 from django.db.models import Sum
-
+from geminai_api.client import get_car_ai_bio
 
 def car_inventory_update():
     cars_count = Car.objects.all().count()
@@ -14,6 +14,17 @@ def car_inventory_update():
         cars_count=cars_count, 
         cars_value=cars_value
         )
+
+
+@receiver(pre_save, sender=Car)
+def car_pre_save(sender, instance, **kwargs):
+    if not instance.bio:
+        instance.bio = get_car_ai_bio(
+            model=instance.model, 
+            brand=instance.brand.name, 
+            year=instance.model_year
+            )
+
 
 
 @receiver(post_save, sender=Car)
